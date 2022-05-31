@@ -13,14 +13,13 @@
 
 <body class="top-fixed bg-rk-dark-color">
   <header class="ae-container-fluid ae-container-fluid--full rk-header bg-rk-pink-color">
-    <input type="checkbox" id="mobile-menu" class="rk-mobile-menu">
     <div class="ae-container-fluid rk-topbar">
       <h1 class="rk-logo">lizbeth gonzales</h1>
     </div>
   </header>
   <section class="ae-container-fluid rk-main">
     <section id="app" class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
-      <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4 hover-zoom">
+      <div class="ae-masonry ae-masonry-sm-2 ae-masonry-md-2 ae-masonry-xl-4 hover-zoom">
         <a v-for="photo in photos" href="#0" class="rk-item ae-masonry__item">
           <img :src="'assets/img/'+photo+'.jpeg'" alt="">
           <!-- <div class="item-meta">
