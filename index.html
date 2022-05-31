@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Book Phots - Lizbeth Gonzales</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/urku-ico.svg">
+  <link rel="stylesheet" href="assets/css/aurora-pack.min.css">
+  <link rel="stylesheet" href="assets/css/aurora-theme-base.min.css">
+  <link rel="stylesheet" href="assets/css/urku.css">
+</head>
+
+<body class="top-fixed bg-rk-dark-color">
+  <header class="ae-container-fluid ae-container-fluid--full rk-header bg-rk-pink-color">
+    <input type="checkbox" id="mobile-menu" class="rk-mobile-menu">
+    <div class="ae-container-fluid rk-topbar">
+      <h1 class="rk-logo"><a href="#">lizbeth gonzales</a></h1>
+    </div>
+  </header>
+  <section class="ae-container-fluid rk-main">
+    <section id="app" class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
+      <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
+        <a v-for="photo in photos" href="#" class="rk-item ae-masonry__item">
+          <img :src="'assets/img/'+photo+'.jpeg'" alt="">
+          <div class="item-meta">
+            <!-- <h2>{{name}}</h2> -->
+            <!-- <p>{{name}}</p> -->
+          </div>
+        </a>
+      </div>
+    </section>
+  </section>
+  <footer class="ae-container-fluid rk-footer ">
+    <div class="ae-grid ae-grid--collapse">
+      <div class="ae-grid__item item-lg-4 au-xs-ta-center"><a href="#0" class="rk-social-btn rk-light-color ">
+          <svg>
+            <use xlink:href="assets/img/symbols.svg#icon-facebook"></use>
+          </svg></a><a href="#0" class="rk-social-btn rk-light-color">
+          <svg>
+            <use xlink:href="assets/img/symbols.svg#icon-twitter"></use>
+          </svg></a><a href="#0" class="rk-social-btn rk-light-color">
+          <svg>
+            <use xlink:href="assets/img/symbols.svg#icon-pinterest"></use>
+          </svg></a><a href="#0" class="rk-social-btn rk-light-color">
+          <svg>
+            <use xlink:href="assets/img/symbols.svg#icon-tumblr"></use>
+          </svg></a></div>
+      <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
+        <p class="rk-footer__text rk-footer__contact "> <span class="ae-u-bold">Email: </span><span class="ae-u-bolder">
+            <a href="#0" class="rk-light-color">dlizbethgm@gmail.com</a></span></p>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
+
+  <script>
+    const app = new Vue({
+      el: "#app",
+      data: {
+        anio: 2022,
+        name: 'Lizbeth Gonzales',
+        photos: ['img1', 'img2', 'img3', 'img4', 'img5', 'img6', 'img7', 'img8', 'img9', 'img10', 'img11']
+      },
+
+      created() {
+
+        this.photos.sort(() => {
+          return Math.random() - 0.5
+        });
+
+        //  console.log(this.photos);
+      },
+
+      methods: {
+        // numeroRandom(){
+        //   this.random = Math.floor(Math.random()* this.photos.length);
+        //   console.log('random', this.random);
+        // }
+      },
+
+    });
+  </script>
+</body>
+
+</html>
