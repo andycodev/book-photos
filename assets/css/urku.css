@@ -2179,6 +2179,14 @@ body {
   background-color: #e5989b;
 }
 
-.contenedor:hover .imagen {-webkit-transform:scale(1.3);transform:scale(1.3);}
-.contenedor {overflow:hidden;}
-
+/* Zoom In #1 */
+.hover-zoom a img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover-zoom a:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.1);
+}

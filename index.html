@@ -20,13 +20,13 @@
   </header>
   <section class="ae-container-fluid rk-main">
     <section id="app" class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
-      <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
+      <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4 hover-zoom">
         <a v-for="photo in photos" href="#0" class="rk-item ae-masonry__item">
           <img :src="'assets/img/'+photo+'.jpeg'" alt="">
-          <div class="item-meta">
-            <!-- <h2>{{name}}</h2> -->
-            <!-- <p>{{name}}</p> -->
-          </div>
+          <!-- <div class="item-meta">
+            <h2>{{name}}</h2>
+            <p>{{name}}</p>
+          </div> -->
         </a>
       </div>
     </section>
