@@ -7,8 +7,9 @@
   <title>Book Photos - Lizbeth Gonzales</title>
   <link rel="icon" type="image/svg+xml" href="assets/img/urku-ico.svg">
   <link rel="stylesheet" href="assets/css/aurora-pack.min.css">
-  <link rel="stylesheet" href="assets/css/aurora-theme-base.min.css">
+  <!-- <link rel="stylesheet" href="assets/css/aurora-theme-base.min.css"> -->
   <link rel="stylesheet" href="assets/css/urku.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
 </head>
 
 <body class="top-fixed bg-rk-dark-color">
@@ -19,7 +20,7 @@
   </header>
   <section class="ae-container-fluid rk-main">
     <section id="app" class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
-      <div class="ae-masonry ae-masonry-sm-2 ae-masonry-md-2 ae-masonry-xl-4 hover-zoom">
+      <div class="animated fadeIn ae-masonry ae-masonry-sm-2 ae-masonry-md-2 ae-masonry-xl-4 hover-zoom">
         <a v-for="photo in photos" href="#0" class="rk-item ae-masonry__item">
           <img :src="'assets/img/'+photo+'.jpeg'" alt="">
           <!-- <div class="item-meta">
@@ -51,8 +52,8 @@
       </div>
     </div>
   </footer>
-  <script src="assets/js/svg4everybody.min.js"></script>
-  <script>svg4everybody();</script>
+ <!--  <script src="assets/js/svg4everybody.min.js"></script> -->
+  <!-- <script>svg4everybody();</script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
 
   <script>
