@@ -78,8 +78,7 @@ body {
   -ms-flex-pack: justify;
           justify-content: space-between;
  /*  padding-bottom: 3.3rem; */
-  padding-bottom: 2.2rem;
-  padding-top: 2.2rem;
+  padding: 2.8rem;
 }
 @media (min-width: 64em) {
   .rk-topbar {
